@@ -1,7 +1,5 @@
 package com.appsdeveloperblog.photoapp.api.users.ui.controllers;
 
-import com.appsdeveloperblog.photoapp.api.users.data.UserEntity;
-import com.appsdeveloperblog.photoapp.api.users.data.UsersRepository;
 import com.appsdeveloperblog.photoapp.api.users.service.UsersService;
 import com.appsdeveloperblog.photoapp.api.users.shared.UserDto;
 import com.appsdeveloperblog.photoapp.api.users.ui.model.CreateUserRequestModel;
@@ -13,8 +11,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.UUID;
 
 import static org.modelmapper.convention.MatchingStrategies.STRICT;
 
@@ -30,7 +26,7 @@ public class UsersController {
 
     @GetMapping("/status")
     public String status() {
-        return "working" + environment.getProperty("local.server.port")+", with token"+environment.getProperty("token.secret");
+        return "working" + environment.getProperty("local.server.port")+", with token "+environment.getProperty("token.uber");
     }
 
     @PostMapping(

@@ -9,8 +9,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="PhotoAppAPIConfigServer" />
         <module name="PhotoAppApiAccountManagement" />
-        <module name="ApiGateway" />
         <module name="PhotoAppDiscoveryService" />
+        <module name="ApiGateway" />
         <module name="PhotoAppApiUsers" />
       </profile>
     </annotationProcessing>
