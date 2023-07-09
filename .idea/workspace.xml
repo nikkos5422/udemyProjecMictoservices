@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97b506d7-973e-4f4a-9ee2-09fcf541f4af" name="Changes" comment="added actuator">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_core_1_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_1_4_RELEASE.xml" afterDir="false" />
+    <list default="true" id="97b506d7-973e-4f4a-9ee2-09fcf541f4af" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_15.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiGateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ApiGateway/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApiGateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ApiGateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhotoAppAPIConfigServer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoAppAPIConfigServer/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoAppApiUsers/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoAppApiUsers/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhotoAppApiUsers/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoAppApiUsers/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -61,13 +58,26 @@
       <recent name="$PROJECT_DIR$/../PhotoAppAPIConfigServer/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PhotoAppApiUsersApplication">
+  <component name="RunManager" selected="Application.PhotoAppApiConfigServerApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.appsdeveloperblog.photoapp.api.gateway.ApiGatewayApplication" />
       <module name="ApiGateway" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.appsdeveloperblog.photoapp.api.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PhotoAppApiConfigServerApplication" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.appsdeveloperblog.photoapp.api.account.PhotoAppApiConfigServerApplication" />
+      <module name="PhotoAppAPIConfigServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.appsdeveloperblog.photoapp.api.account.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,19 +111,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.appsdeveloperblog.photoapp.api.account.PhotoAppApiConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.appsdeveloperblog.photoapp.api.account.PhotoAppApiConfigServerApplication" />
-      <module name="PhotoAppAPIConfigServer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.appsdeveloperblog.photoapp.api.account.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="All in ApiGateway" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ApiGateway" />
       <option name="PACKAGE_NAME" value="" />
@@ -122,12 +119,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.ApiGatewayApplication" />
+      <item itemvalue="Application.PhotoAppApiConfigServerApplication" />
+      <item itemvalue="Application.PhotoAppApiUsersApplication" />
+      <item itemvalue="Application.PhotoAppDiscoveryServiceApplication" />
+      <item itemvalue="JUnit.All in ApiGateway" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PhotoAppApiUsersApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
-        <item itemvalue="Application.com.appsdeveloperblog.photoapp.api.account.PhotoAppApiConfigServerApplication" />
+        <item itemvalue="Application.PhotoAppApiUsersApplication" />
         <item itemvalue="Application.PhotoAppDiscoveryServiceApplication" />
+        <item itemvalue="Application.PhotoAppApiConfigServerApplication" />
         <item itemvalue="JUnit.All in ApiGateway" />
       </list>
     </recent_temporary>
@@ -162,8 +166,33 @@
       <option name="project" value="LOCAL" />
       <updated>1686513223249</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added actuator">
+      <created>1688660051601</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688660051601</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.validation:jakarta.validation-api" />
+    <option featureType="dependencySupport" implementationName="java:com.google.protobuf:protobuf-java" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.integration:spring-integration-core" />
+    <option featureType="dependencySupport" implementationName="java:io.projectreactor:reactor-core" />
+    <option featureType="dependencySupport" implementationName="java:javax.persistence:javax.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.cloud:spring-cloud-context" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate.validator:hibernate-validator" />
+    <option featureType="dependencySupport" implementationName="java:javax.validation:validation-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.cloud:spring-cloud-stream" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-messaging" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
