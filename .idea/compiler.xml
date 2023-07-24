@@ -11,12 +11,14 @@
         <module name="PhotoAppApiAccountManagement" />
         <module name="PhotoAppDiscoveryService" />
         <module name="ApiGateway" />
+        <module name="PhotoAppApiAlbums" />
         <module name="PhotoAppApiUsers" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ApiGateway" target="1.8" />
       <module name="PhotoAppApiAccountManagement" target="1.8" />
+      <module name="PhotoAppApiAlbums" target="1.8" />
       <module name="PhotoAppAPIConfigServer" target="1.8" />
       <module name="PhotoAppApiUsers" target="1.8" />
       <module name="PhotoAppDiscoveryService" target="1.8" />
@@ -27,6 +29,7 @@
       <module name="ApiGateway" options="-parameters" />
       <module name="PhotoAppAPIConfigServer" options="-parameters" />
       <module name="PhotoAppApiAccountManagement" options="-parameters" />
+      <module name="PhotoAppApiAlbums" options="-parameters" />
       <module name="PhotoAppApiUsers" options="-parameters" />
       <module name="PhotoAppDiscoveryService" options="-parameters" />
     </option>

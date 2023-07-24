@@ -4,6 +4,7 @@ import com.appsdeveloperblog.photoapp.api.users.service.UsersService;
 import com.appsdeveloperblog.photoapp.api.users.shared.UserDto;
 import com.appsdeveloperblog.photoapp.api.users.ui.model.CreateUserRequestModel;
 import com.appsdeveloperblog.photoapp.api.users.ui.model.CreateUserResponseModel;
+import com.appsdeveloperblog.photoapp.api.users.ui.model.UserResponseModel;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -38,6 +39,16 @@ public class UsersController {
 UserDto createdUser = usersService.createUser(userDto);
         return  ResponseEntity.status(HttpStatus.CREATED).body(mapper().map(createdUser, CreateUserResponseModel.class));
     }
+
+    @GetMapping(value = "/{userId}")
+    public ResponseEntity<UserResponseModel> getUser(@PathVariable String userId) {
+
+        UserDto userDto = usersService.getUserByUserId(userId);
+        UserResponseModel returnValue = new ModelMapper().map(userDto, UserResponseModel.class);
+
+        return ResponseEntity.status(HttpStatus.OK).body(returnValue);
+    }
+
 
     private static ModelMapper mapper() {
         ModelMapper modelMapper = new ModelMapper();
